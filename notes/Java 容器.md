@@ -1062,7 +1062,7 @@ public static void main(String[] args) {
 
 #### 存储结构
 
-WeakHashMap 的 Entry 继承自 WeakReference，被 WeakReference 关联的对象在下一次垃圾回收时会被回收。
+WeakHashMap 的 Entry 继承自 WeakReference，只被 WeakReference 关联的对象在下一次垃圾回收时会被回收。
 
 WeakHashMap 主要用来实现缓存，通过使用 WeakHashMap 来引用缓存对象，由 JVM 对这部分缓存进行回收。
 
